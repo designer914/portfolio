@@ -1,0 +1,292 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Manrope%3Awght%40400%3B500%3B700%3B800&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      // Tailwind configuration for dark mode and custom colors
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              background: '#111418',
+              'header-border': '#283039',
+              'card-bg': '#283039',
+              'accent-blue': '#1172d4',
+              'text-muted': '#9dabb9',
+            },
+            fontFamily: {
+              sans: ['Manrope', 'Noto Sans', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col bg-background dark group/design-root overflow-x-hidden"
+      style='font-family: Manrope, "Noto Sans", sans-serif;'
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-header-border px-10 py-3 sticky top-0 z-10 bg-background/95 backdrop-blur-sm"
+        >
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2
+              class="text-white text-lg font-bold leading-tight tracking-[-0.015em]"
+            >
+              Design Portfolio
+            </h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a
+                class="text-white text-sm font-medium leading-normal hover:text-accent-blue transition-colors"
+                href="#about-section"
+                >About</a
+              >
+              <a
+                class="text-white text-sm font-medium leading-normal hover:text-accent-blue transition-colors"
+                href="#work-section"
+                >Projects</a
+              >
+              <a
+                class="text-white text-sm font-medium leading-normal hover:text-accent-blue transition-colors"
+                href="#contact-section"
+                >Get In Touch</a
+              >
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-card-bg text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-white/10 transition-colors"
+            >
+              <span class="truncate">Get In Touch</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[350px] flex-col gap-6 bg-transparent @[480px]:gap-8 items-center justify-center px-4 py-20 @[480px]:px-10 border border-dashed border-gray-700/50 @[480px]:rounded-lg"
+                  style="background-image: none;"
+                >
+                  <div class="flex flex-col gap-3 text-center max-w-4xl">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Crafting Seamless Digital Experiences
+                    </h1>
+                    <h2
+                      class="text-white text-base font-normal leading-normal @[480px]:text-lg @[480px]:font-normal @[480px]:leading-normal opacity-70"
+                    >
+                      I'm a UI/UX designer specializing in web and app design. I
+                      create intuitive and visually appealing interfaces that
+                      enhance user engagement and satisfaction.
+                    </h2>
+                  </div>
+                  <a
+                    href="#work-section"
+                    class="mt-4 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-accent-blue text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-colors"
+                  >
+                    <span class="truncate">View My Work</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <h2
+              id="work-section"
+              class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              Featured Projects
+            </h2>
+
+            <div class="px-4 py-3">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- ✅ First Project Thumbnail Updated -->
+                <a href="case-study-harmony.html" class="block">
+                  <div
+                    class="flex h-full flex-1 flex-col gap-4 rounded-lg hover:opacity-80 transition-opacity cursor-pointer"
+                  >
+                    <div
+                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col border border-gray-700/50"
+                      style='background-image: url("https://via.placeholder.com/900x600/1172d4/FFFFFF?text=Nēa+Skincare+Website");'
+                    ></div>
+                    <div>
+                      <p
+                        class="text-white text-base font-medium leading-normal"
+                      >
+                        Website design for Nēa Skincare
+                      </p>
+                      <p
+                        class="text-text-muted text-sm font-normal leading-normal"
+                      >
+                        A complete UI UX design of a skincare website, focusing
+                        on user experience and minimalism.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="case-study-nova.html" class="block">
+                  <div
+                    class="flex h-full flex-1 flex-col gap-4 rounded-lg hover:opacity-80 transition-opacity cursor-pointer"
+                  >
+                    <div
+                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col border border-gray-700/50"
+                      style='background-image: url("https://via.placeholder.com/900x600/1172d4/FFFFFF?text=Nēa+Skincare+Website");'
+                    ></div>
+                    <div>
+                      <p
+                        class="text-white text-base font-medium leading-normal"
+                      >
+                        Web UI for Hotel Booking Service
+                      </p>
+                      <p
+                        class="text-text-muted text-sm font-normal leading-normal"
+                      >
+                        A mobile app designed for a fitness brand, aimed at
+                        improving user engagement and tracking.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="case-study-aura.html" class="block">
+                  <div
+                    class="flex h-full flex-1 flex-col gap-4 rounded-lg hover:opacity-80 transition-opacity cursor-pointer"
+                  >
+                    <div
+                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col border border-gray-700/50"
+                      style='background-image: url("https://via.placeholder.com/900x600/181a1f/FFFFFF?text=Project+3+Dashboard+UI");'
+                    ></div>
+                    <div>
+                      <p
+                        class="text-white text-base font-medium leading-normal"
+                      >
+                        E-commerce Platform for a Fashion Retailer
+                      </p>
+                      <p
+                        class="text-text-muted text-sm font-normal leading-normal"
+                      >
+                        An e-commerce platform for a fashion retailer,
+                        emphasizing a seamless shopping experience.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="case-study-concept.html" class="block">
+                  <div
+                    class="flex h-full flex-1 flex-col gap-4 rounded-lg hover:opacity-80 transition-opacity cursor-pointer"
+                  >
+                    <div
+                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col border border-gray-700/50"
+                      style='background-image: url("https://via.placeholder.com/900x600/181a1f/FFFFFF?text=Project+4+Coming+Soon");'
+                    ></div>
+                    <div>
+                      <p
+                        class="text-white text-base font-medium leading-normal"
+                      >
+                        New Project Idea
+                      </p>
+                      <p
+                        class="text-text-muted text-sm font-normal leading-normal"
+                      >
+                        A new concept I'm working on to push the boundaries of
+                        minimal design.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <h2
+              id="about-section"
+              class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              About Me
+            </h2>
+            <p
+              class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4"
+            >
+              I'm a passionate UI/UX designer with a focus on creating
+              user-centered designs that are both functional and aesthetically
+              pleasing. With a background in visual communication and a keen eye
+              for detail, I strive to deliver exceptional digital experiences.
+              My design process involves thorough research, prototyping, and
+              iterative testing to ensure the final product meets the needs of
+              both the client and the end-users.
+            </p>
+
+            <h2
+              id="contact-section"
+              class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              Contact
+            </h2>
+            <p
+              class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4"
+            >
+              Let's collaborate! If you have a project in mind or just want to
+              chat about design, feel free to reach out. I'm always open to new
+              opportunities and challenges.
+            </p>
+            <div
+              class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3"
+            >
+              <label class="flex flex-col min-w-40 flex-1">
+                <p
+                  class="text-white text-base font-medium leading-normal pb-2"
+                >
+                  Your Email
+                </p>
+                <input
+                  placeholder="Enter your email"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-card-bg focus:border-none h-14 placeholder:text-text-muted p-4 text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex px-4 py-3 justify-start">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-accent-blue text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-colors"
+              >
+                <span class="truncate">Send</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
